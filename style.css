@@ -1,0 +1,396 @@
+/* Reset CSS untuk menghindari styling default browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fb;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan jarak antara border */
+    margin-top: 20px; /* Memberikan jarak atas antara tabel dan konten lainnya */
+}
+
+table th, table td {
+    padding: 12px 15px; /* Memberikan ruang di dalam setiap sel */
+    text-align: left; /* Menyelaraskan teks ke kiri */
+    border: 1px solid #ddd; /* Menambahkan border tipis pada setiap sel */
+}
+
+table th {
+    background-color: #f4f4f4; /* Memberikan latar belakang abu-abu muda pada header */
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Memberikan warna latar belakang bergantian pada baris genap */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Memberikan efek hover pada baris saat disorot */
+}
+
+.content {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.progress-bar {
+    margin-top: 20px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.progress {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50; /* Warna progress */
+    border-radius: 5px;
+}
+
+
+.role-menu {
+    margin-top: 30px;
+}
+
+.role-menu h4 {
+    font-size: 1.5em;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.role-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.role-menu ul li {
+    margin-bottom: 10px;
+}
+
+.role-menu ul li a {
+    font-size: 1.2em;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.role-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; /* Menggunakan latar belakang putih */
+    width: 100%;
+}
+
+/* Kotak Form Login */
+.login-box {
+    background-color: #ffffff;
+    padding: 50px 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+    transform: translateY(-5px); /* Efek mengangkat sedikit pada hover */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul Login */
+.login-box h2 {
+    font-size: 2.5em;
+    color: #2980b9; /* Warna biru yang menonjol */
+    margin-bottom: 20px;
+}
+
+.login-box p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Input Grup */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 1em;
+    color: #34495e;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Styling Input Field */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #34495e;
+    background-color: #ecf0f1; /* Latar belakang input yang lembut */
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #2980b9;
+    outline: none;
+    background-color: #ffffff; /* Fokus pada input berubah lebih terang */
+}
+
+/* Tombol Sign In */
+.btn-signin {
+    width: 100%;
+    padding: 15px;
+    background-color: #27ae60; /* Hijau yang menonjol untuk tombol */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-signin:hover {
+    background-color: #2ecc71; /* Efek hover menjadi lebih cerah */
+    transform: translateY(-2px); /* Efek sedikit naik saat hover */
+}
+
+/* Tombol Register */
+.btn-register {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.btn-register:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #34495e;
+    color: white;
+}
+
+.sidebar-menu {
+    padding-left: 20px;
+}
+
+.sidebar-menu h3 {
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+}
+
+.sidebar-menu ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.sidebar-menu ul li a:hover {
+    color: #3498db;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 220px;
+    transition: margin-left 0.3s;
+    width: calc(100% - 220px);
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-left: 0;  /* Menghilangkan margin kiri agar lebih menempel dengan sidebar */
+    border-bottom: 2px solid #ecf0f1; /* Menambahkan border bawah pada header */
+}
+
+.header h2 {
+    font-size: 2.5em;
+    color: #2980b9;
+    margin-right: auto;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+/* Tombol Logout */
+.logout-btn {
+    font-size: 1.2em;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.logout-btn:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* Main Content Margin Adjustment */
+.content {
+    margin-top: 30px; /* Memberikan jarak antara header dan konten */
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .open-btn {
+        font-size: 1.5em;
+    }
+}
+
+/* Styling untuk Dashboard */
+.dashboard-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Kotak Dashboard */
+.dashboard-box {
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard-box h2 {
+    font-size: 2.5em;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.dashboard-box p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Menyusun daftar menu */
+.role-menu {
+    margin-bottom: 30px;
+}
+
+.role-menu h4 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.role-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Menyusun menu untuk tampil secara horizontal */
+    justify-content: center; /* Menyusun menu agar berada di tengah */
+}
+
+.role-menu ul li {
+    margin-right: 20px; /* Memberikan jarak antar menu */
+}
+
+.role-menu ul li a {
+    font-size: 1.2em;
+    color: #2980b9;
+    text-decoration: none;
+    display: block;
+}
+
+.role-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Button */
+.dashboard-box p a {
+    font-size: 1em;
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.dashboard-box p a:hover {
+    color: #c0392b;
+}
